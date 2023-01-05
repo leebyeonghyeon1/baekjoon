@@ -18,9 +18,9 @@ int main()
 
 		if (max < n[i]) {
 			max = n[i]; //최대값 찾기
-			index = i; //최대값위치 찾기
+			index = i+1; //최대값위치 찾기
 		}
 	}
-	printf("%d\n%d", max, index + 1); //출력
+	printf("%d\n%d", max, index); //출력
 	return 0;
 }
