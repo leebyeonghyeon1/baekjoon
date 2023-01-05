@@ -8,13 +8,13 @@ int main()
 	for (int i = 0; i < size; i++) { //입력: 자연수 9개
 		scanf("%d", &n[i]);
 
-		//if (n[i] >= 100) return 0; //100 이상 입력 시 종료
-		//else if (n[i] <= 0) return 0; //0이하 입력 시 종료
-		//if (i >= 1) {
-		//	for (int j = 0; j < i; j++) {
-		//		if (n[i] == n[j]) return 0;
-		//	}
-		//}//중복 입력 시 종료
+		if (n[i] >= 100) return 0; //100 이상 입력 시 종료
+		else if (n[i] <= 0) return 0; //0이하 입력 시 종료
+		if (i >= 1) {
+			for (int j = 0; j < i; j++) {
+				if (n[i] == n[j]) return 0;
+			}
+		}//중복 입력 시 종료
 
 		if (max < n[i]) {
 			max = n[i]; //최대값 찾기
