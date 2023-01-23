@@ -1,0 +1,1 @@
+print(len(input().split())) #단어 수는 공백으로 알 수 있다
